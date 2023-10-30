@@ -25,9 +25,23 @@ create table if not exists customer
     name text
 );
 
-create table if not exists  customer_orders
+create table if not exists customer_orders
 (
-    id serial primary key ,
+    id       serial primary key,
     customer bigint not null references customer (id),
     name     varchar(255)
+);
+-- repositories
+create table if not exists book
+(
+    id    serial primary key,
+    title text not null,
+    isbn  text not null
+);
+
+create table if not exists nyt_best_seller
+(
+    id serial primary key,
+    title text not null ,
+    ranking int
 );
