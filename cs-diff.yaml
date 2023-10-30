@@ -1,0 +1,34 @@
+databaseChangeLog:
+- changeSet:
+    id: '1698703513304'
+    author: Spring Data Relational
+    objectQuotingStrategy: LEGACY
+- changeSet:
+    id: '1698703677287'
+    author: Spring Data Relational
+    objectQuotingStrategy: LEGACY
+- changeSet:
+    id: '1698703689696'
+    author: Spring Data Relational
+    objectQuotingStrategy: LEGACY
+- changeSet:
+    id: '1698704278166'
+    author: Spring Data Relational
+    objectQuotingStrategy: LEGACY
+- changeSet:
+    id: '1698704678026'
+    author: Spring Data Relational
+    objectQuotingStrategy: LEGACY
+- changeSet:
+    id: '1698704725587'
+    author: Spring Data Relational
+    objectQuotingStrategy: LEGACY
+- changeSet:
+    id: '1698704854741'
+    author: Spring Data Relational
+    objectQuotingStrategy: LEGACY
+- changeSet:
+    id: '1698704867196'
+    author: Spring Data Relational
+    objectQuotingStrategy: LEGACY
+
