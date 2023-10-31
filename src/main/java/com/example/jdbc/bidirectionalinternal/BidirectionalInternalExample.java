@@ -41,7 +41,8 @@ interface OrderRepository extends CrudRepository<Order, Long> {
 
 /**
  * want bidirectional relationships? you can assign the
- * parent of a relationship to the child in a @Transient field.
+ * left side of a relationship to an instance of the type of the right, through
+ * its @PersistenceConstructor-annotated constructor) to a @Transient annotated field.
  */
 record Customer(@Id Long id, String name, Set<Order> orders) {
 
