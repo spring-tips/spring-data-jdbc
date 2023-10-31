@@ -39,6 +39,10 @@ interface CustomerRepository extends CrudRepository<Customer, Long> {
 interface OrderRepository extends CrudRepository<Order, Long> {
 }
 
+/**
+ * want bidirectional relationships? you can assign the
+ * parent of a relationship to the child in a @Transient field.
+ */
 record Customer(@Id Long id, String name, Set<Order> orders) {
 
     public void addOrder(Order order) {
@@ -46,6 +50,8 @@ record Customer(@Id Long id, String name, Set<Order> orders) {
     }
 
 }
+
+
 
 @Table("customer_orders")
 record Order(@Id Integer id, String name) {
