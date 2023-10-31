@@ -1,6 +1,5 @@
 package com.example.jdbc.repositories;
 
-import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -42,7 +41,8 @@ interface BookRepository extends ListCrudRepository<Book, Integer> {
                 (
                   select nyt.title from nyt_best_seller nyt  
                 )
-            """)
+            """
+    )
     Collection<Book> findNytBestSellers();
 }
 
